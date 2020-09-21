@@ -12,10 +12,12 @@ public class TaskController {
 
     @GetMapping("/")
     public ResponseEntity main() {
-          return ResponseEntity.ok(200);
+          return ResponseEntity.ok(202);
     }
     @GetMapping("/task")
   public ResponseEntity task() {
         return ResponseEntity.ok(new Task(1L,"Restfull"));
   }
+
+
 }
